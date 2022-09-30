@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InitialViewController" customModule="Trivia" customModuleProvider="target">
             <connections>
-                <outlet property="textfieldUser" destination="1tv-2U-8pM" id="6G9-ue-crR"/>
+                <outlet property="nameTextField" destination="1tv-2U-8pM" id="2bW-92-qPS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -41,7 +41,7 @@
                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="SignIn:" destination="-1" eventType="touchUpInside" id="6Cv-sD-faK"/>
+                        <action selector="SignIn:" destination="-1" eventType="touchUpInside" id="Pnx-nF-Wyo"/>
                     </connections>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1tv-2U-8pM">
@@ -79,7 +79,7 @@
                 <constraint firstItem="aW6-cO-o75" firstAttribute="centerX" secondItem="eby-N1-g4p" secondAttribute="centerX" id="lCB-Lu-0p9"/>
                 <constraint firstAttribute="trailing" secondItem="vbU-eT-Uy7" secondAttribute="trailing" constant="20" id="nQC-zW-Pks"/>
             </constraints>
-            <point key="canvasLocation" x="-564" y="83"/>
+            <point key="canvasLocation" x="-983" y="24"/>
         </view>
     </objects>
     <resources>

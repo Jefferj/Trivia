@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionViewController" customModule="Trivia" customModuleProvider="target">
+            <connections>
+                <outlet property="nameLabel" destination="liH-Ft-3V8" id="lNN-g0-6C9"/>
+                <outlet property="questionLabel" destination="D63-pC-Imb" id="aKu-mT-HqE"/>
+                <outlet property="scoreLabel" destination="7PO-5F-pZF" id="fgf-x5-Tgk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D63-pC-Imb">
+                    <rect key="frame" x="70" y="293" width="294" height="251"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asv-Z1-9V0" userLabel="ButtonYes">
+                    <rect key="frame" x="70" y="743" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="74J-7h-vvy"/>
+                        <constraint firstAttribute="width" constant="100" id="EKh-Sf-Iah"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <backgroundConfiguration key="background" image="Check.svg"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="yesButtonTapped:" destination="-1" eventType="touchUpInside" id="QTK-hV-MMq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2og-yA-1Cu" userLabel="ButtonNo">
+                    <rect key="frame" x="264" y="743" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="G9G-Vs-m7e"/>
+                        <constraint firstAttribute="height" constant="100" id="nZW-GD-FjM"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="" buttonSize="large">
+                        <backgroundConfiguration key="background" image="Faill"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="noButtonTapped:" destination="-1" eventType="touchUpInside" id="eEE-jU-Sa6"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PO-5F-pZF">
+                    <rect key="frame" x="175" y="165" width="64" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liH-Ft-3V8">
+                    <rect key="frame" x="149" y="82" width="116.5" height="42"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.050157435239999999" green="0.1631189287" blue="0.29152619839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="liH-Ft-3V8" secondAttribute="trailing" constant="148.5" id="2GT-eD-6rN"/>
+                <constraint firstItem="2og-yA-1Cu" firstAttribute="leading" secondItem="Asv-Z1-9V0" secondAttribute="trailing" constant="94" id="4Nq-4H-hFn"/>
+                <constraint firstItem="2og-yA-1Cu" firstAttribute="leading" secondItem="Asv-Z1-9V0" secondAttribute="trailing" constant="94" id="8ew-kV-7Vf"/>
+                <constraint firstItem="D63-pC-Imb" firstAttribute="top" secondItem="7PO-5F-pZF" secondAttribute="bottom" constant="107" id="Di6-17-gd1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2og-yA-1Cu" secondAttribute="trailing" constant="50" id="FM4-NW-Lue"/>
+                <constraint firstItem="Asv-Z1-9V0" firstAttribute="top" secondItem="D63-pC-Imb" secondAttribute="bottom" constant="199" id="Fxq-HO-rxf"/>
+                <constraint firstItem="D63-pC-Imb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="70" id="H2L-Ed-kwa"/>
+                <constraint firstItem="liH-Ft-3V8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="149" id="H3a-7O-CmP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7PO-5F-pZF" secondAttribute="trailing" constant="175" id="X9k-HU-VCO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="D63-pC-Imb" secondAttribute="trailing" constant="50" id="Zzb-Ya-Hod"/>
+                <constraint firstItem="7PO-5F-pZF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="175" id="bzN-7q-ETF"/>
+                <constraint firstItem="Asv-Z1-9V0" firstAttribute="top" secondItem="D63-pC-Imb" secondAttribute="bottom" constant="199" id="eDA-BG-miw"/>
+                <constraint firstItem="D63-pC-Imb" firstAttribute="top" secondItem="7PO-5F-pZF" secondAttribute="bottom" constant="107" id="iQF-hz-f9q"/>
+                <constraint firstItem="liH-Ft-3V8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="38" id="r8E-Hp-Zf8"/>
+                <constraint firstItem="2og-yA-1Cu" firstAttribute="top" secondItem="D63-pC-Imb" secondAttribute="bottom" constant="199" id="t4N-1c-r6W"/>
+                <constraint firstItem="7PO-5F-pZF" firstAttribute="top" secondItem="liH-Ft-3V8" secondAttribute="bottom" constant="41" id="zrm-Ac-sq1"/>
+                <constraint firstItem="Asv-Z1-9V0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="70" id="zv6-Fb-92h"/>
+            </constraints>
+            <point key="canvasLocation" x="42.028985507246382" y="141.96428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Check.svg" width="1024" height="1024"/>
+        <image name="Faill" width="500" height="500"/>
+    </resources>
+</document>
